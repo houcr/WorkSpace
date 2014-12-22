@@ -1,0 +1,15 @@
+一.  配置$CATALINA_HOME/conf/tomcat-users.xml.配置如下：
+
+<?xml version='1.0' encoding='utf-8'?>
+
+<tomcat-users>
+
+  <role rolename="manager"/>
+
+  <role rolename="admin"/>
+
+  <user username="admin" password="admin" roles="admin,manager"/>
+
+</tomcat-users>
+
+注意：这里需要配置两个角色，admin角色负责Tomcat Administration管理，manager角色负责Tomcat Manager管理。
